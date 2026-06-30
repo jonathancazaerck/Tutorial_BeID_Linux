@@ -1,4 +1,4 @@
-# Aanmelden op Fedora met je Belgische eID via GDM — een werkende handleiding
+# Aanmelden op Fedora met je Belgische eID via GDM
 
 Deze handleiding beschrijft een **werkende** opzet om grafisch in te loggen op Fedora
 (via GDM, het GNOME-inlogscherm) met je Belgische elektronische identiteitskaart, in
@@ -147,6 +147,9 @@ sudo sh -c 'cat belgiumrca*.pem citizenca*.pem > /etc/sssd/pki/sssd_auth_ca_db.p
 (Vervang de bestandsnamen door wat je gedownload hebt.) De eID gebruikt geen voor jou
 bereikbare OCSP bij lokale login; daarom zetten we OCSP-controle uit in de SSSD-config
 (volgende stap).
+
+De certificaten kunnen ook uit de beid-viewer worden gehaald. Applicatie openen > kaart
+insteken en tabblad "certificaten"
 
 ---
 
